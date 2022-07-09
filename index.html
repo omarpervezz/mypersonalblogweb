@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/mainlogo.png" />
+    <link rel="stylesheet" href="./css/Normalize.css" />
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://csshake.surge.sh/csshake.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Home Blog : Omar.</title>
+  </head>
+  <body>
+    <!--------- HEADER AREA ---------->
+    <header class="vhs-flicker nav_bg_adder">
+      <div class="container-fluid">
+        <nav id="header">
+          <a href="#header" class="logo_link">
+            <div class="logo">
+              <img src="./img/mainlogo.png" alt="Logo Image" class="logo" />
+            </div>
+          </a>
+          <div class="pushbar_main_content">
+            <div class="hamburger" data-pushbar-target="mypushbar1">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </div>
+          <div class="first_div">
+            <div class="second_div">
+              <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html" target="blank">Blog</a></li>
+                <li><a href="#roadMap">Service</a></li>
+                <li>
+                  <a href="outplatforms.html" target="blank">Experience</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div
+      data-pushbar-id="mypushbar1"
+      data-pushbar-direction="right"
+      class="push-container"
+    >
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about_me">About</a></li>
+        <li><a href="#roadMap">Service</a></li>
+        <li><a href="outplatforms.html" target="blank">Experience</a></li>
+      </ul>
+      <button data-pushbar-close>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 64 64"
+          stroke-width="2.5"
+          stroke="#CACBD2"
+          fill="none"
+          class="duration-300 transform transition-all"
+          style="width: 24px; height: 24px"
+        >
+          <path d="M8.06 8.06l47.35 47.88M55.94 8.06L8.59 55.94"></path>
+        </svg>
+      </button>
+    </div>
+    <!--------- HEADER AREA ---------->
+    <!---banner--->
+    <section class="banner_info">
+      <canvas id="canvas"></canvas>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 omarAllInfo">
+                <div class="row">
+                  <div class="col-12">
+                    <h1 class="text-animation">Omar Pervez</h1>
+                    <p class="text-animation-short-info">
+                      Front-end Web Developer, PSD to HTML Expert
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/banner.js"></script>
+    <script type="module" src="./js/home.js"></script>
+  </body>
+</html>

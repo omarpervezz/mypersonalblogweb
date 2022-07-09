@@ -1,0 +1,488 @@
+@import url(../css/animation/rebound.css);
+$black: #000000;
+.blog-banner {
+  padding: 17rem 0 15rem 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(hsla(0, 4%, 5%, 0.78), rgba(16, 15, 15, 0.659)),
+    url(../img/water-texture-background-brown-leaf-glass-window_53876-145232.jpg);
+  background-size: cover;
+  background-position: center;
+  .titleOmar {
+    padding-top: 2rem;
+    font-size: 7rem;
+    font-family: FuturaStd-Condensed, FuturaStd-ExtraBold;
+    span {
+      display: inline-block;
+      transition: 0.4s all;
+      color: #12e4d2ea;
+    }
+    .titleC {
+      transform: scale(1.2) !important;
+      color: #fff;
+    }
+  }
+  button {
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    a {
+      font-family: FuturaStd-Medium;
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+  }
+}
+.blog-list {
+  background: linear-gradient(#080808, #100f0fd1),
+    url(../img/stormy-rainy-weather-sunset-sea-balaton-lake-hungary_416511-5419.jpg);
+  background-size: cover;
+  background-position: center top;
+  padding: 25rem 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  .fond {
+    .first_ {
+      position: absolute;
+      top: 0;
+      left: 2rem;
+    }
+    .secend_ {
+      position: absolute;
+      bottom: 0;
+      right: 2rem;
+    }
+    .letter {
+      font-family: FuturaStd-Bold;
+      top: 0;
+      left: 3rem;
+      font-size: 15rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #101314 !important;
+      -webkit-text-stroke: 2px #a79a9a;
+    }
+  }
+  .blog-card {
+    max-width: 55rem;
+    width: 100%;
+    height: 50rem;
+    color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 0;
+    box-shadow: 0px 11px 1rem -0.9rem #a98d8d80;
+    text-align: center;
+    transition: all 0.4s;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.62)),
+      url(../img/cardbg.jpg) center no-repeat;
+    background-size: cover;
+  }
+  .blog-card a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .blog-card .color-overlay {
+    background: rgba(64, 84, 94, 0.5);
+    width: 55rem;
+    height: 50rem;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+  }
+  .blog-card .gradient-overlay {
+    background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 21%);
+    width: 55rem;
+    height: 50rem;
+    position: absolute;
+    top: 35rem;
+    left: 0;
+    z-index: 15;
+  }
+  .blog-card:hover {
+    box-shadow: 0 1.8rem 2rem -0.9rem rgba(0, 10, 30, 0.75);
+  }
+  .blog-card:hover .card-info {
+    opacity: 1;
+    bottom: 100px;
+  }
+  .blog-card:hover .color-overlay {
+    background: rgba(64, 64, 70, 0.8);
+  }
+  .blog-card:hover .title-content {
+    margin-top: 7rem;
+  }
+  .title-content {
+    text-align: center;
+    margin: 17rem 0 0 0;
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.6s;
+  }
+
+  .blog-card:hover h3:after {
+    animation: changeLetter 0.3s 1 linear;
+    width: 80%;
+  }
+
+  .blog-card h3,
+  h1 {
+    font-size: 3.4rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    font-family: "Abril Fatface", serif;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+  .blog-card h3 a {
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+  }
+  .blog-card h3 a:hover {
+    text-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.95);
+  }
+  h3:after {
+    content: " ";
+    display: block;
+    width: 10%;
+    height: 0.2rem;
+    margin: 2rem auto;
+    border: 0;
+    background: #bda26b;
+    transition: all 0.2s;
+  }
+
+  @keyframes changeLetter {
+    0% {
+      width: 10%;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+
+  .intro {
+    width: 17rem;
+    margin: 0 auto;
+    color: #ddd;
+    font-style: italic;
+    line-height: 1.8rem;
+  }
+  .intro a {
+    color: #ddd;
+  }
+  .intro a:hover {
+    text-decoration: underline;
+  }
+  .card-info {
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    margin: 0 auto;
+    padding: 0 5rem;
+    font-style: 1.6rem;
+    line-height: 2.4rem;
+    z-index: 20;
+    opacity: 0;
+    transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
+  }
+
+  .card-info a {
+    display: block;
+    width: 10rem;
+    margin: 1.5rem auto;
+    background: #fff;
+    color: #444;
+    padding: 0.3rem 1rem;
+    border-radius: 0.2rem;
+    font-size: 1.3rem;
+  }
+  .card-info a:hover {
+    background: #8e7c49;
+    color: #fff;
+  }
+  .card-info a:hover span {
+    filter: brightness(10);
+    opacity: 1;
+  }
+  .utility-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    text-align: left;
+  }
+  .utility-info:after {
+    content: " ";
+    background: url(https://rawcdn.githack.com/Nodws/NodPen/ffad95aa5244b4b09a3c7c1508a018959bbedb7e/postItem/licons.svg)
+      center no-repeat;
+    background-size: 3rem auto;
+    display: block;
+    opacity: 0.4;
+    position: absolute;
+    bottom: 2.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 1.5rem;
+  }
+  .utility-info a:hover {
+    text-decoration: underline;
+  }
+  .utility-list {
+    list-style-type: none;
+    margin: 0 0 1rem 10.5rem;
+    padding: 0;
+    width: 100%;
+  }
+  .utility-list li {
+    margin: 0 5px 0 0;
+    padding: 0.3rem 0 1.5rem 0;
+    display: inline-block;
+
+    font-size: 1.4rem;
+  }
+
+  .licon {
+    position: relative;
+    width: 2.3rem;
+    height: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .licon:before {
+    content: "";
+    background: url(https://rawcdn.githack.com/Nodws/NodPen/ffad95aa5244b4b09a3c7c1508a018959bbedb7e/postItem/licons.svg?) -2px -6px
+      no-repeat;
+    background-size: 25rem;
+    width: 2.6rem;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: -0.3rem;
+    left: 0;
+  }
+  .icon-white {
+    filter: brightness(10);
+  }
+  .icon-black {
+    filter: brightness(0);
+    opacity: 0.6;
+  }
+  .icon-like:before {
+    background-position: -18.3rem -0.6rem;
+  }
+  .icon-com:before {
+    background-position: -6.3rem -0.4rem;
+  }
+  .icon-dat:before {
+    background-position: -9.4rem -0.7rem;
+  }
+  .icon-tag:before {
+    background-position: -3.3rem -0.6rem;
+  }
+
+  @media (max-width: 750px) {
+    .utility-info {
+      text-align: center;
+    }
+    .utility-info ul {
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .utility-info li {
+      width: 49%;
+      display: inline-block;
+      box-sizing: border-box;
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .utility-info li:last-of-type {
+      width: 100%;
+    }
+    .card-info {
+      display: none;
+    }
+    .blog-card:hover .title-content,
+    .title-content {
+      margin-top: 4rem;
+    }
+    .blog-card {
+      height: 30rem;
+    }
+    .blog-card h3 {
+      font-size: 1.3rem;
+    }
+    .intro {
+      font-size: 0.9rem;
+    }
+  }
+
+  #profile-badges:after {
+    content: "BRO";
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+      Sans-Serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+    color: black !important;
+    border-radius: 0.3rem;
+    position: relative;
+    top: -0.2rem;
+    text-shadow: none !important;
+    white-space: nowrap;
+    letter-spacing: 0;
+    background: #ffdd40;
+  }
+  .profile-header {
+    background: #333
+      url(https://images.unsplash.com/photo-1435783099294-283725c37230?dpr=1&auto=compress,format&fit=crop&w=1376&h=635&q=80&cs=tinysrgb&crop=&bg=)
+      top center no-repeat;
+    background-size: cover;
+    font-size: 3.2rem;
+    position: relative;
+  }
+  .profile-header:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(23, 23, 31, 0.42);
+    z-index: 0;
+  }
+  #profile-links a {
+    font-family: "Abril Fatface", serif;
+    font-size: 1.3rem;
+  }
+
+  .profile-links a[href*="nodws\.com"]:before {
+    content: "\2616";
+    color: #0a45b5;
+    padding-right: 0.3rem;
+  }
+
+  .profile-links a[href*="twitter"]:before {
+    content: "\1f426";
+    color: #08c;
+  }
+
+  .profile-links a[href*="dribbble"]:before {
+    content: "\26BE";
+    color: #d055bf;
+  }
+  #following-this-user {
+    pointer-events: none;
+  }
+  #follow-this-user {
+    font-size: 1.3rem;
+    border-color: #359ef9;
+  }
+  #follow-this-user:after {
+    content: "\1f448";
+  }
+  .links-and-stats {
+    background: rgb(20, 20, 21);
+  }
+  .profile-name h1 {
+    text-shadow: 0 0.6rem 0.9rem rgba(0, 0, 0, 0.48);
+  }
+  .profile-avatar {
+    bottom: -10px;
+    width: 150px;
+    height: 150px;
+    border: 0px solid #1e1e1e;
+    background: rgba(2, 2, 2, 0.49);
+    box-shadow: 0 1.9rem 1.9rem -1rem rgba(0, 0, 0, 0.63);
+  }
+  .profile-username,
+  .upsell,
+  .profile-location,
+  .primary-pro {
+    opacity: 0;
+  }
+  .upsell,
+  #pen-as-header-question {
+    display: none;
+  }
+  .profile-nav-1 a {
+    font-size: 1.2rem;
+  }
+  .profile-bio,
+  .profile-nav-1 a.active,
+  .profile-nav-1 a:hover {
+    color: rgba(20, 20, 21, 0.59) !important;
+    font-size: 1.2rem;
+  }
+  .meta .pen-title {
+    font-family: "Droid Serif", serif;
+    text-align: center;
+  }
+  .pagination-button {
+    background-color: #2f2f31;
+    border-color: #2f2f31;
+    transition: all 0.2s;
+  }
+  .pagination-button:hover {
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.2);
+  }
+  .single-project .stats,
+  .single-pen .stats {
+    text-align: center;
+    width: 100%;
+  }
+  .stats svg {
+    fill: #bda26b;
+  }
+  .stats svg,
+  .loves .icon-heart {
+    fill: rgba(47, 47, 49, 0) !important;
+    stroke: #ba6 !important;
+    stroke-width: 0.1em !important;
+  }
+  .loves .icon-heart {
+    stroke-width: 0.5em !important;
+  }
+  .comments svg {
+    stroke-width: 0.35em !important;
+  }
+  .single-stat.loves.loved-1 svg {
+    stroke: #fff !important;
+  }
+
+  .single-pen:hover h3:after {
+    width: 40%;
+    transition: all 0.2s;
+  }
+  .pen-actions {
+    border: 0px !important;
+  }
+  .meta {
+    box-shadow: none !important;
+  }
+}
