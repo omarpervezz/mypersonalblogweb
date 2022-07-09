@@ -159,7 +159,7 @@ header nav .first_div ul li a {
 .hamburger {
   overflow: hidden;
   position: fixed;
-  top: calc(90px * 0.36);
+  top: calc(90px * 0.46);
   right: calc(90px * 0.36);
   cursor: pointer;
   display: none;

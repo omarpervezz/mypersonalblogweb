@@ -143,7 +143,7 @@ header {
 .hamburger {
   overflow: hidden;
   position: fixed;
-  top: calc(#{$size} * 0.36);
+  top: calc(#{$size} * 0.46);
   right: calc(#{$size} * 0.36);
   cursor: pointer;
   display: none;
